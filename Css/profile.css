@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: nexa;
+    src: url(../fonts/Nexa-Heavy.ttf);
+}
+
+@font-face {
+    font-family: southPark;
+    src: url(../fonts/Avenue.otf);
+}
+
+@font-face {
+    font-family: bright;
+    src: url(../fonts/Bright\ Melody\ Personal\ Use\ Only.ttf);
+}
+
+body {
+    margin: 0;
+    background-image: url("../images/gif/profile.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    position: absolute;
+    left: 393px;
+    top: 100px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(61, 61, 61, 0.726);
+    font-size: 28px;
+    font-family: bright;
+}
+
+#profile-card {
+    margin: auto;
+    margin-top: 3%;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.322);
+    width: 700px;
+    height: 450px;
+    z-index: -2;
+}
+
+#charImage {
+    width: 250px;
+    margin-top: 8%;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+#nameEmail {
+    position: absolute;
+    z-index: 1;
+    left: 350px;
+    top: 410px
+}
+
+#dataInfo {
+    z-index: 1;
+}
+
+#rightInfo {
+    position: absolute;
+    left: 700px;
+    top: 150px;
+}
+
+#rightInfo p {
+    margin-bottom: 10%;
+    padding-bottom: 5%;
+}
+
+
+.infoLabel {
+    font-family: nexa;
+    font-size: 16px;
+    color: rgb(165, 14, 14)
+}
+
+.infoSpan {
+    font-family: southPark;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+
+}
+
+
+
+#imageDiv {
+    margin: 4% 0 0 4%;
+
+}
+
+#profileBorder {
+    width: 315px;
+    position: absolute;
+}

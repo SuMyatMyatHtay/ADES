@@ -1,0 +1,102 @@
+body {
+   background-image: url('../images/adversary.jpg');
+   background-size: cover;
+   width: 100;
+   height: 100;
+   font-family: Arial;
+   color: white;
+   font-family: 'So Bad', sans-serif;
+   font-size: 20px;
+}
+
+button{
+   justify-content: center;
+}
+
+.navbar{
+background-color: rgb(83, 167, 149);
+overflow: hidden;
+} 
+
+.navbar a {
+   float: left;
+   display: block;
+   color: rgb(19, 75, 57);
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+
+.navbar a:hover {
+   background-color: #577d6b;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+}
+h2 {
+  text-align: center;
+  color: #fff;
+}
+.container {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+form {
+   color: rgb(255, 255, 255);
+}
+
+.box {
+   flex-basis: 23%;
+   margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+   width: 50%;
+   padding: 5px;
+   margin-bottom: 5px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px ;
+    background-color: blueviolet;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(pink, 0, purple);
+}
+ .form-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+ }
+
+ .form-input {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+ }
+
+ .submit-button {
+    background-color: grey ;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'sans-serif';
+    font-size: 16px;
+    cursor: pointer;
+ }
+ 
+ .button{
+    background-color: tomato;
+ }

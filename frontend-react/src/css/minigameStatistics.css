@@ -1,0 +1,48 @@
+#maincontainerforstatisticsIngames{
+    background-image: url(../images/clanListBackground.jpg);
+    background-size: cover;
+    height: 100vh;
+    padding: 0%;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    margin: 0;
+}
+
+.statistics-chart-container {
+    background-color: #f2f2f2; /* Set the desired background color */
+    width: 800px; /* Set the desired width */
+    height: 400px; /* Set the desired height */
+  }
+
+#topPlayerContainer{
+    margin-top: 20px;
+    width:800px;
+    height:100px;
+    border:5px solid pink;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#gobacktoPlayerPage{
+    width:100px;
+    height:40px;
+    border-radius: 5px ;
+    border: 5px solid rgb(164, 46, 65);
+    background-color: rgb(164, 46, 65);
+    color:white;
+    margin-top: 50px;
+    margin-left: 20px;
+
+}
+
+#gobacktoPlayerPage:hover{
+    background-color: rgb(149, 96, 105);
+    border: 5px solid rgb(149, 96, 105);
+}
+
+#topPlayerText{
+    font-size: 30px;
+    text-align: start;
+    margin-left: 30px;
+}

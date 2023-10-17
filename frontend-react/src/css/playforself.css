@@ -1,0 +1,208 @@
+#maincontainerforplayerpage {
+    background-image: url(../images/clanListBackground.jpg);
+    background-size: cover;
+    height: 100vh;
+    padding: 0%;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    margin: 0;
+  }
+
+.secitem1 {
+    grid-area: photo;
+  }
+  .secitem2 {
+    grid-area: clanname;
+  }
+  .secitem3 {
+    grid-area: playername;
+  }
+  .secitem4 {
+    grid-area: points;
+  }
+  .secitem5 {
+    grid-area: buttons;
+  }
+  .secitem6 {
+    grid-area: Minigames;
+  }
+  .secitem7 {
+    grid-area: description;
+  }
+  
+  .sec-grid-container {
+    display: grid;
+    height: 80%;
+    grid-template-areas:
+      "photo     clanname     buttons"
+      "photo     playername   buttons"
+      "photo     points       buttons"
+      "Minigames Minigames    buttons"
+      "Minigames Minigames    description"
+      "Minigames Minigames    description";
+    grid-template-columns: 15% 35% 50% 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 50px);
+    background-color: rgba(249, 248, 248, 0.8);
+    width: 1200px;
+    height: 540px;
+  }
+  
+  #containerforgridinself {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .secitem1 {
+    width: 120px; /* Set the width of the circular container */
+    height: 120px; /* Set the height of the circular container */
+    border-radius: 50%; /* Make the container circular */
+    overflow: hidden;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  .secitem1 img {
+    width: 100%; /* Make the image fill the circular container */
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .secitem6{
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    justify-content: center;
+  
+  }
+  
+  #secminigametext{
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  
+  #firstGamebutton2{
+    background-image: url("../images/gamebuttonBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    border: 0px;
+    margin-right: 20px;
+  }
+  
+  #firstGamebutton2:hover{
+    border: 2px solid #b84433;
+  }
+  
+  #secondGamebutton2{
+    background-image: url("../images/SecGameButtonBackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px solid gray;
+  }
+  
+  #secondGamebutton2:hover{
+    border: 2px solid #b84433;
+  }
+  /* .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 20px;
+  } */
+  
+  .secitem5 {
+    text-align: center;
+  }
+  
+  #containerforbackinself {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .secitem7{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  #seccontainerfordescription{
+    width:550px;
+    height:300px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  #goldtext{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 70px;
+  }
+  
+  #secplayernametext{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 25px;
+  }
+  
+  #joinedOntext{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 37px;
+  }
+  
+  #backbuttoninself{
+    width:100px;
+    height: 40px;
+    margin-left: 10px;
+  }
+  
+  #backbuttoninself:hover{
+    background-color: rgb(133, 130, 130);
+  }
+  
+  .sectextfordesc{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  .highestscorestext{
+    font-size: 20px;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  #textToJoinClan{
+    width:450px;
+    height:50px;
+    border:2px solid black;
+    border-radius: 5px;
+    text-align: start;
+    display: flex;
+    margin-right: 20px;
+
+  }
+  
+  #joinclanbutton{
+    width:80px;
+    height: 30px;
+    background-color: green;
+    color: white;
+    border-radius: 15px;
+    border: 2px solid green;
+  }
+
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend Profile</title>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./Css/nav.css" rel="stylesheet" />
+    <link href="./Css/profile.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./Css/SuButton.css">
+</head>
+
+<body>
+    <button class="custom-button" id="backButton">Back</button>
+
+    <div id="profile-card">
+        <img src="./images/profileBorder.JPEG" id="profileBorder" />
+        <div>
+            <h1 style=" left: 390px;top: 70px;">Profile</h1>
+            <div id="playerBasicInfo">
+                <div id="imageDiv">
+                    <img id="charImage">
+                </div>
+                <div id="rightInfo">
+                    <p class="infoLabel">Date joined: <span class="infoSpan" id="date"></span></p>
+                    <p class="infoLabel">Gold earned: <span class="infoSpan" id="goldEarned"></span></p>
+                    <p class="infoLabel">Clan points earned: <span class="infoSpan" id="clan_points_earned"></span></p>
+                    <p class="infoLabel">No of card: <span class="infoSpan" id="no_of_cards"></span></p>
+                    <p class="infoLabel">No of friends: <span class="infoSpan" id="no_of_friends"></span></p>
+                    <p class="infoLabel">No of clans: <span class="infoSpan" id="no_of_clans"></span></p>
+                </div>
+            </div>
+            <div id="dataInfo">
+                <div id="nameEmail" style="left: 360px;top: 380px">
+                    <p class="infoLabel">Player ID: <span class="infoSpan" id="id"></span></p>
+                    <p class="infoLabel">Name: <span class="infoSpan" id="name"></span></p>
+                    <p class="infoLabel">Email: <span class="infoSpan" id="email"></span></p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./script/profile.js"></script>
+    <script>
+
+        const backButton = document.getElementById("backButton");
+        backButton.onclick = function () {
+            var tID = localStorage.getItem('tempPlayerID');
+            localStorage.setItem('player_id', tID);
+            history.back();
+        }
+    </script>
+</body>
+
+</html>

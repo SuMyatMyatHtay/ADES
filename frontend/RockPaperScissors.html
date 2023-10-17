@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock,Paper,Scissors Room</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="./Css/rockPaperScissors.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <div id="firstScreen">
+        <div id="instructions">
+            <p>
+                Welcome to Rock, Paper, Scissors! You will be competing against our masters.
+                When you press enter, there will be buttons: 'Rock','Paper','Scissors'.
+                You have 5 seconds to press the button of your choice. Remember Rock wins Scissors,
+                Scissors wins Paper and Paper wins Rock. If you win, you will get $5.00 gold and 10 clan points.
+                If you lose, your gold will be deducted by $3.00 and clan points will be deducted by 5. If you draw,
+                no rewards given. All the best!
+            </p>
+        </div>
+        <button id="start">Start</button>
+        <button id="RPSData">RPS Data</button>
+    </div>
+    <div id="secondScreen">
+        <div id="playerDiv">
+
+        </div>
+        <div id="masterDiv">
+ 
+        </div>
+        <button class="options" id="rock">Rock</button>
+        <button class="options" id="paper">Paper</button>
+        <button class="options" id="scissors">Scissors</button>
+        <h2 id="countdown"></h2>
+        <button id="quit">Quit</button>
+    </div>
+    <img src="./images/rock.png" id="rockImg" class="resultImg" />
+    <img src="./images/paper.png" id="paperImg" class="resultImg" />
+    <img src="./images/scissors.png" id="scissorsImg" class="resultImg" />
+    <div id="playersChoice">
+
+    </div>
+    <h3 id="endCard"></h3>
+    
+    <button id="restart">Restart</button>
+    <button id="backToVillage">Back To Village</button>
+    <script src="./script/rockPaperScissors.js"></script>
+
+</body>
+
+</html>

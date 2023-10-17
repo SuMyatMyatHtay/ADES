@@ -1,0 +1,181 @@
+#clanDetailsAndMiniGames {
+  background-image: url(../images/finalBackground.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-position: fixed;
+  background-repeat: no-repeat;
+
+}
+
+.containerForClanDetailsPage {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+#clanNameInPage {
+  text-align: center;
+  top: -15px;
+  text-transform: uppercase;
+  font-family: verdana;
+  font-size: 4em;
+  font-weight: 100;
+  color: rgb(229, 236, 236);
+  text-shadow: 1px 1px 1px #575555, 1px 2px 1px #575555, 1px 3px 1px #575555,
+    1px 4px 1px #575555, 1px 5px 1px #575555, 1px 6px 1px #575555,
+    1px 7px 1px #575555, 1px 8px 1px #575555, 1px 9px 1px #575555,
+    1px 10px 1px #575555, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+.white-text {
+  color: white;
+}
+
+#clanPointsAndGold {
+  font-size: 35px;
+  top: 10%;
+}
+
+#topPlayer,
+#gameTitle {
+  font-size: 35px;
+}
+
+.chartContainer {
+  background-color: white;
+  padding: 15px;
+  width: 50vw;
+  margin-top: 70px;
+}
+
+#noOfCards {
+  font-size: 30px;
+  color: white;
+  margin-right: 10px;
+  top: 1%;
+  right: 0;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+}
+
+#SecContainer {
+  position: relative;
+}
+
+#togoFirstGame {
+  background-image: url("../images/gamebuttonBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  border-color: #b84433;
+  margin-right: 20px;
+}
+
+#togoSecGame {
+  background-image: url("../images/SecGameButtonBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  border-color: #b84433;
+}
+
+#togoFirstGame:hover {
+  border: 0px;
+}
+
+#togoSecGame:hover {
+  border: 0px;
+}
+
+.thirdContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.thirdContainerForPlayerPage {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 35%;
+}
+
+#togoGiftCardpage {
+  width: 120px;
+  height: 50px;
+  color: white;
+  background-color: green;
+  border: 0px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+#togoGiftCardpage:hover {
+  background-color: #57b26b;
+}
+
+#exit {
+  margin-right: 20px;
+  width: 80px;
+  height: 45px;
+  background-color: red;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+#exit:hover {
+  background-color: #9c5e55;
+}
+
+#container4 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#tableFormembers {
+  background-color: #f2f2f2;
+  margin-top: 50px;
+  margin-right: 30px;
+  width: 280px;
+  height: 250px;
+  color: rgb(8, 8, 8);
+}
+
+table,
+th,
+td {
+  border: 1px solid #b84433;
+  border-collapse: collapse;
+  font-size: 18px;
+}
+
+thead th {
+  height: 50px;
+  font-size: 25px;
+}
+
+tbody td {
+  padding-left: 15px;
+}
+
+#topPlayer {
+  margin-top: 60px;
+}
+
+.chart-container {
+  background-color: #f2f2f2;
+  /* Set the desired background color */
+  width: 800px;
+  /* Set the desired width */
+  height: 400px;
+  /* Set the desired height */
+}

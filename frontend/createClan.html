@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="./Css/createClan.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./Css/nav.css" rel="stylesheet" />
+    <title>Create Clan</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <p id="gameName">Monster Cat World</p>
+            <img src="./images/logo.PNG" id="logo" />
+            <ul id="navul">
+
+            </ul>
+        </nav>
+        <div id="subNav">
+        </div>
+    </header>
+    <div class="form">
+            <p id="exceedText">
+            </p>
+     <img src="./images/extraChar2.PNG" id="clanImage"/>
+        <div class="inputs" id="clanNameInput">
+            <h2 class="text-center">Create Clan</h2>
+            <label for="ClanName" class="mainLabel">Clan Name:</label>
+            <input type="text" class="form-control" id="clanName">
+            <p class="error" id="nameError"></p>      
+        </div>
+        <p class="error" id="clanNameError"></p>
+        <div class="inputs" id="clanTypeInput">
+            <label for="" id="typeLabel"  class="mainLabel">Clan Type:</label><br>
+            <input type="radio" class="radio" id="privateOpt" name="type" value="private">
+            <label for="opt1" class="labelRadio">Private</label><br>
+            <input type="radio" class="radio" id="publicOpt" name="type" value="public">
+            <label for="opt2" class="labelRadio">Public</label><br>
+            <p class="error" id="radioError"></p>
+        </div>
+            
+    
+        <button id="submit" type="button">Create</button>
+    </div>
+
+    <script src="./script/nav.js"></script>
+    <script src="./script/createClan.js"></script>
+</body>
+</html>

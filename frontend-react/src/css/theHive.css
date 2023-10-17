@@ -1,0 +1,490 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Sultan;
+    src: url(../fonts/Sultan.otf);
+}
+
+@font-face {
+    font-family: southPark;
+    src: url(../fonts/south\ park.ttf);
+}
+
+@font-face {
+    font-family: nexa;
+    src: url(../fonts/Nexa-Heavy.ttf);
+}
+
+
+
+#hive {
+    height: 100vh;
+    background-image: url("../images/theHive2.jpg");
+    background-position: 0px -100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0%;
+    margin: 0%;
+}
+
+#hiveAlert {
+    position: absolute;
+    background-color: white;
+    height: 200px;
+    color: black;
+    width: 400px;
+    top: 150px;
+    left: 450px;
+    box-shadow: 2px 2px 7px rgba(92, 92, 92, 0.559);
+    font-size: 20px;
+    text-align: center;
+    padding: 3%;
+}
+
+
+#hiveExit {
+    font-size: large;
+    background-color: rgba(0, 34, 255, 0.911);
+    color: white;
+    margin: 1%;
+    position: absolute;
+    z-index: 5;
+    font-family: sans-serif;
+    border: 1.6px solid rgb(0, 0, 0);
+}
+
+#hiveExit:hover {
+    background-color: rgba(167, 163, 163, 0.568);
+    color: #ffffff;
+}
+
+#hiveNamePoints {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    position: absolute;
+    z-index: 3;
+}
+
+#hiveName {
+    font-family: southPark;
+    color: #ececec;
+    text-shadow: 2px 2px #323232;
+    border: none;
+    font-size: 25px;
+    text-align: center;
+    margin: 0%;
+}
+
+#infoCircleIcon {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000000;
+
+}
+
+#infoCircleIcon:hover {
+    color: black;
+    background-color: white;
+}
+
+#hiveScoreLabel {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 0%;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.445);
+}
+
+#hiveScoreSpan {
+    font-size: 15px;
+    color: #ffd900;
+}
+
+#loadingGifTHDiv {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    margin-top: 8%;
+
+}
+
+#THloadingGIF {
+
+    width: 600px;
+    margin: auto;
+    align-self: center;
+    transform: all ease-in 0.2s;
+    box-shadow: 2px 2px 10px rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.hiveRankLabel {
+    display: inline;
+    font-size: 14px;
+    text-align: center;
+    margin: 0%;
+    color: white;
+}
+
+.hiveRankSpan {
+
+    text-align: center;
+}
+
+#HivePlayers {
+    position: relative;
+    top: 180px;
+    padding: 0%;
+    height: 425px;
+    overflow: hidden;
+    /* background-color: #197be38b;*/
+}
+
+
+
+
+#loadingHive {
+    letter-spacing: 5px;
+    font-family: Sultan;
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    font-size: 3em;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px #197be3;
+}
+
+#players img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: 1%;
+}
+
+.playerNameHive {
+    position: relative;
+    top: -50px;
+    right: 15px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.playerDiv {
+    box-sizing: content-box;
+    width: 20%;
+    transition: transform .3s;
+}
+
+.playersInHive {
+    width: 90%
+}
+
+#bottomImageHive {
+    position: absolute;
+    top: -110px;
+    right: -0px;
+    width: 1285px;
+}
+
+#hiveShopBtn {
+    width: 100px;
+
+}
+
+#hiveShopBtn:hover {
+    opacity: 0.7;
+}
+
+#hiveShopBtnDiv {
+    position: absolute;
+    right: 10px;
+    top: -10px;
+    z-index: 1;
+    height: 90px;
+}
+
+#editHiveBtnDiv {
+    position: absolute;
+    right: 10px;
+    top: 100px;
+}
+
+#editHiveBtn {
+    width: 100px;
+}
+
+#editHiveBtn:hover {
+    opacity: 0.7;
+}
+
+.hiveBtnName {
+    position: relative;
+    text-align: center;
+    top: -20px;
+    font-size: 13px;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(88, 88, 88, 0.578);
+}
+
+.furnitureColumn {
+    background-color: #ffffffa5;
+    height: 450px;
+    width: 90px;
+    position: absolute;
+    right: 20px;
+    top: 72px;
+    padding: 5px 5px 5px 5px;
+ 
+}
+
+#furnitureColumn{
+    z-index: 10;
+}
+
+#furnitureColumn2 {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.furnitureDivBorder {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-bottom: 4%;
+    height: 80px;
+
+}
+
+#bottomDivMock {
+    position: absolute;
+    /* background-color: rgba(0, 255, 255, 0.221);*/
+    height: 500px;
+    top: 110px;
+    width: 100%;
+}
+
+#boughtFurniture {
+    overflow: hidden;
+    max-height: 415px;
+    height: 415px;
+
+}
+
+#boughtFurniture::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+#boughtFurniture {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.hiveArrows {
+    height: 15px;
+}
+
+
+
+
+#hiveArrowIcons {
+    position: absolute;
+    left: 39px;
+    top: 3px;
+    font-size: 20px;
+    z-index: 1;
+}
+
+#hiveArrowIcons2 {
+    position: relative;
+    left: 35px;
+    font-size: 20px;
+}
+
+.furnitureDivBorder2 {
+    height: 0px;
+}
+
+.furnitureDivImg {
+    position: absolute;
+}
+
+#doneEditingHiveBtn {
+    position: absolute;
+    right: 35px;
+    bottom: 3px
+}
+
+#doneEditingHiveBtn:hover {
+    background-color: #a7a7a7;
+
+}
+
+
+
+
+.hiveBottomEditor {
+    background-color: #b5b5b5;
+    box-shadow: 1px 1px 5px rgba(124, 124, 124, 0.559);
+    height: 60px;
+    width: 900px;
+    position: absolute;
+    left: 200px;
+    top: 490px;
+    display: flex;
+    padding: 0 15px 0 15px
+}
+
+#furnitureImgBtm {
+    margin: auto 15px auto 0px
+}
+
+#furnitureNameBtm {
+    margin: auto 0 auto 0;
+    font-family: Nexa;
+    color: #0065d1;
+}
+
+#furnitureNameDiv {
+    margin: auto 0 auto 0;
+}
+
+#editorDetails {
+    margin-left: 15px;
+    border-left: 2px solid black;
+    padding-left: 10px;
+}
+
+.hiveSpan {
+    font-family: sans-serif;
+    color: black
+}
+
+#editorDate {
+    font-size: 15px;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 0px;
+    color: #0065d1;
+}
+
+#editorFreshness {
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #0065d1;
+}
+
+#hiveWidthSlider {
+    border-left: 2px solid black;
+    margin: 0px auto 0 auto;
+    padding-left: 10px;
+}
+
+#upperSlider {
+    margin-top: 4px;
+}
+
+#hiveWidthLabel {
+    color: #0065d1;
+    margin-right: 10px;
+    font-size: 15px;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#rangeNumLabelDiv {
+    position: absolute;
+    bottom: 2px
+}
+
+
+#Num100Label {
+    font-size: 14px;
+    position: relative;
+    left: 170px
+}
+
+#Num0Label {
+    font-size: 14px;
+    position: relative;
+    left: 50px
+}
+
+#putAwayDiv {
+    margin: 6px 20px 0px 0;
+}
+
+#putAwayItems {
+    width: 40px;
+    object-fit: contain;
+}
+
+#putAwayItems:hover {
+    opacity: 0.45;
+}
+
+.optionsText {
+    font-size: 12px;
+    text-align: center;
+}
+
+#optionsText2 {
+    font-size: 12px;
+}
+
+#sellFurniture {
+    font-size: 30px;
+    margin: 6px 0 auto 0
+}
+
+#sellFurniture:hover {
+    color: white;
+}
+
+#hiveButtonOptions {
+    display: flex;
+
+}
+
+#instructionDivTH {
+    display: flex;
+    width: 100vw;
+    margin-top: 3%;
+    position: absolute;
+    top: 10px;
+    justify-content: center;
+    z-index: 6;
+}
+
+#doneReadingTH:hover {
+    background-color: #a7a7a7;
+}
+
+#congratulationsGifTH {
+    width:550px;
+}
+
+#congratulationsDivTH {
+    display: flex;
+    position: absolute;
+    z-index:5;
+    justify-content: center;  
+    width: 100vw;
+    top:95px
+}
+
+#congratulatoryTextTH{
+    position: relative;
+    top:-350px;
+    text-align: center;
+    font-size: 20px;
+    padding: 0% 5% 0% 5%;
+}

@@ -1,0 +1,421 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: WarPriest;
+    src: url(../fonts/WarPriestRegular-PanE.ttf);
+}
+
+@font-face {
+    font-family: Nexa;
+    src: url(../fonts/Nexa-Heavy.ttf);
+}
+
+@font-face {
+    font-family: Avenue;
+    src: url(../fonts/Avenue.otf);
+}
+
+@font-face {
+    font-family: LemonMilk;
+    src: url(../fonts/LEMONMILK-Bold.otf);
+}
+
+
+
+#clanDataBG {
+    background-image: url("../images/clanDataBG.jpg");
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding-bottom: 10%;
+    background-repeat: no-repeat;
+
+    background-size: cover;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+a {
+    transition: all 0.5s ease;
+}
+
+#clanDataBG::-webkit-scrollbar {
+    display: none;
+}
+
+#topBarDataNav {
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    width: 100%;
+    background-color: rgb(93, 169, 255);
+    padding-top: 1%;
+    box-shadow: 2px 2px 5px rgba(0, 76, 255, 0.349);
+}
+
+#topBarDataNav ul li {
+    display: inline;
+    margin-left: 5%;
+    color: rgb(220, 196, 14);
+    text-shadow: 2px 2px 5px rgba(121, 121, 121, 0.349);
+    text-decoration: none;
+    font-weight: 900;
+    font-family: Nexa;
+    text-decoration: underline;
+}
+
+#topBarDataNav ul li:hover {
+    color: rgb(255, 255, 255);
+}
+
+#topBarDataNav ul li a {
+    color: rgb(227, 201, 0);
+    text-decoration: none;
+    font-weight: 900;
+    font-family: Nexa;
+}
+
+#topBarDataNav ul li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+#clanDataName {
+    font-size: 40px;
+    font-family: Avenue;
+    font-weight: 500;
+    color: white;
+    margin: 5% 0% 0% 2%;
+    text-decoration: underline;
+
+}
+
+#backToClanDashboard i {
+    color: white
+}
+
+#backToClanDashboard:hover i {
+    color: rgb(197, 167, 0)
+}
+
+#backToClanDashboard p {
+    color: white
+}
+
+#backToClanDashboard:hover p {
+    color: rgb(197, 167, 0)
+}
+
+#basicStats {
+    padding-top: 5%;
+}
+
+.basicStatsLabel {
+    font-size: 30px;
+    margin: auto;
+    font-family: Nexa;
+    color: white;
+    font-weight: 900;
+    text-shadow: 2px 2px 5px blue;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(10, 99, 159);
+}
+
+.basicStatsSpan {
+    font-size: 18px;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#basicStatsDiv {
+    padding: 2% 0% 1% 0%;
+    display: flex;
+    font-family: Nexa
+}
+
+#basicStatsDiv div {
+
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.basicStatsSpanDiv {
+    background-color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+
+}
+
+
+#contributionChartSection {
+    padding-top: 5%;
+}
+
+#contributionChartDropdown {
+    margin: 0% 2% 0% 2%;
+
+}
+
+#contributionText {
+    margin: 0% 0% 2% 2%;
+    font-size: 35px;
+    font-family: Nexa;
+    color: white;
+    font-weight: 900;
+    text-shadow: 2px 2px 5px blue;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(10, 99, 159);
+}
+
+#lineGraphContributionDate {
+    padding-top: 4%;
+}
+
+#lineGraphSpentDate {
+    padding-top: 4%;
+}
+
+#lineGraphDateText {
+    margin: 0% 0% 0% 2%;
+    padding-bottom: 0px;
+    font-size: 35px;
+    font-family: Nexa;
+    color: white;
+    font-weight: 900;
+    text-shadow: 2px 2px 5px blue;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(10, 99, 159);
+}
+
+#lineGraphNote {
+    font-size: 15px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(133, 133, 133, 0.479);
+    margin: 0% 0% 0% 2%;
+}
+
+#lineChartDropdown {
+    margin: 3% 0% 0% 2%
+}
+
+#lineChartSpentDropdown {
+    margin: 3% 0% 0% 2%
+}
+
+#firstCharts {
+    display: flex;
+}
+
+#contributionChart {
+    width: 550px;
+    background-color: white;
+    margin: 2%;
+}
+
+#spendingChart {
+    width: 550px;
+    background-color: white;
+    margin: 2%;
+}
+
+#adminArrowLeft {
+    font-size: 30px;
+    margin-left: 7px;
+    margin-top: 20px;
+    color: white;
+}
+
+#adminArrowLeft:hover {
+    color: rgb(0, 0, 190);
+}
+
+#memberColumn {
+    /*  background-color: aquamarine;*/
+    position: absolute;
+    /* right: 0px;
+    top: 25px;*/
+    right: -165px;
+    top: 25px;
+    height: 550px;
+    width: 210px;
+    transition: all 0.5s ease-in;
+}
+
+#arrowMembersDiv {
+    background-color: rgb(43, 171, 226);
+    width: 25px;
+    height: 70px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    position: relative;
+    left: 0px;
+    top: 150px;
+}
+
+
+#clanMemberListDiv {
+    height: 550px;
+    width: 200px;
+    background-color: rgb(0, 216, 254);
+    overflow-y: auto;
+    overflow-x: none;
+    position: relative;
+    left: 25px;
+    top: -70px;
+
+}
+
+#clanMemberListDiv::-webkit-scrollbar {
+    display: none;
+}
+
+.divMember {
+    display: flex;
+    border: 1px solid rgb(0, 107, 169);
+    border-bottom: 1px solid rgb(0, 107, 169);
+    padding-left: 3px;
+}
+
+.memberImgDiv {
+    width: 100px;
+}
+
+
+.dataMember {
+    object-fit: contain;
+    width: 85px;
+    margin-right: 5px;
+    margin: 2% 0% 1% 0%;
+}
+
+
+
+.dataMemberName {
+    margin: 5% 0% 0% 0%;
+    font-size: 16px;
+}
+
+.dataMemberRole {
+    margin: 0% 0% 2% 0%;
+    font-size: 13px;
+}
+
+.optionsRole {
+    width: 80px;
+    font-size: 13px;
+    margin-bottom: 1%;
+}
+
+.optionsRole option {
+    font-size: 15px;
+}
+
+
+.confirimRoleOptions {
+    font-size: 13px;
+    padding: 1% 4px 1% 4px;
+    margin-bottom: 7px;
+    display: block;
+}
+
+.kickPlayerButton {
+    font-size: 13px;
+    padding: 1% 4px 1% 4px;
+    margin-bottom: 7px;
+    display: block;
+}
+
+
+.changePlayerButton {
+    font-size: 13px;
+    padding: 1% 4px 1% 4px;
+    margin-bottom: 5px;
+}
+
+#loadingGIF {
+    position: absolute;
+    top: 150px;
+    left: 450px
+}
+
+#clanDataLoading {
+    width: 400px;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+    transition: all 0.3s ease-out;
+    box-shadow: 2px 2px 20px rgb(105, 105, 105);
+}
+
+#loading2GIF div {
+    display: flex;
+    justify-content: center;
+
+}
+
+#membersDataLoading {
+    align-self: center;
+    position: absolute;
+    top: 100px;
+    width: 800px;
+    opacity: 0;
+    transition: all 0.3s ease-in;
+    transition: all 0.3s ease-out;
+    box-shadow: 2px 2px 20px rgb(253, 253, 253);
+}
+
+
+#lineGraphContributionDate {
+    margin-top: 5%;
+}
+
+
+#lineChartsBottom {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2%;
+}
+
+
+#membersSection {
+    margin-left: 5%;
+    padding-top: 5%;
+}
+
+#allMembersData {
+    font-size: 35px;
+    font-family: Nexa;
+    color: white;
+    font-weight: 900;
+    text-shadow: 2px 2px 5px blue;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(10, 99, 159);
+}
+
+.membersBlock {
+    display: flex
+}
+
+#eachMembersDivFlex {
+    display: flex;
+}
+
+.membersSectionImg {
+    width: 200px
+}
+
+#clanDataAlertDiv {
+    background-color: rgb(143, 216, 255);
+    position: absolute;
+    top: 180px;
+    padding: 2%;
+    box-shadow: 2px 2px 5px rgba(77, 77, 77, 0.598);
+    transition: all ease-in 0.4s;
+    transition: all ease-out 0.3s;
+}
+
+#AreYouSure {
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    font-weight: 900;
+
+}

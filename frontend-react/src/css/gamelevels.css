@@ -1,0 +1,91 @@
+#containerForgameLevel{
+    background-image: url("../images/clanListBackground.jpg");
+    height: 100vh;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    padding: 0%;
+    background-position: fixed;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    margin: 0;
+}
+#containerforback{
+    margin-top: 10px;
+    margin-bottom: 7%;
+    margin-left: 30px;
+}
+
+#backButton{
+    width: 100px;
+    height: 40px;
+    color: aliceblue;
+    border: 0px;
+    border-radius: 10px;
+    background-color: #b84433;
+}
+#backButton:hover{
+    color: black;
+    background-color: #9f574c;
+}
+#secondcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#thirdContainer{
+    width: 600px;
+    height: 250px;
+    border: 3px solid #b84433;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+#titleForgamelevel{
+text-align: center;
+  text-transform: uppercase;
+  font-family: verdana;
+  font-size: 3em;
+  font-weight: 100;
+  color: rgb(180, 191, 191);
+  text-shadow: 1px 1px 1px #575555, 1px 2px 1px #575555, 1px 3px 1px #575555,
+    1px 4px 1px #575555, 1px 5px 1px #575555, 1px 6px 1px #575555,
+    1px 7px 1px #575555, 1px 8px 1px #575555, 1px 9px 1px #575555,
+    1px 10px 1px #575555, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(68, 67, 67, 0.4);
+}
+
+#buttonForLevels{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#level1,#level2,#level3{
+  width:150px;
+  height: 40px;
+  background-color: rgb(71, 163, 71);
+  color: aliceblue;
+  border: 0px;
+}
+
+#level1:hover,#level2:hover,#level3:hover{
+    background-color: rgb(72, 180, 99);
+    color: black;
+}
+
+#levelDescription{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 7%;
+    margin-top: 5%;
+    padding: 5px;
+}
+
+
+
+
+
+

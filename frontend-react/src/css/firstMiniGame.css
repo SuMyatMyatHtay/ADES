@@ -1,0 +1,108 @@
+#body_container {
+  height: 100%;
+  margin: 0;
+  background-image: url('../images/minigameBackground.jpg');
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+
+#score {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: courier;
+
+}
+
+#quit {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border-radius: 10px;
+  background-color: red;
+  font-size: 20px;
+  border-color: red;
+  color: white;
+
+}
+
+
+
+#containerForTwobuttons {
+  width: 480px;
+  height: 170px;
+  background-color: white;
+  position: absolute;
+  border-radius: 10px;
+  border: 3px solid #B84433;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 450px;
+}
+
+#quitFromGame {
+  margin-left: 35px;
+  margin-right: 10px;
+  width: 100px;
+  height: 40px;
+  background-color: red;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+}
+
+#restartFromGame {
+  width: 100px;
+  height: 40px;
+  background-color: green;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+}
+
+#reselectGamelevels {
+  margin-left: 10px;
+  width: 180px;
+  height: 40px;
+  background-color: rgb(38, 109, 185);
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+}
+
+#quitFromGame:hover {
+  background-color: rgb(164, 95, 95);
+}
+
+#restartFromGame:hover {
+  background-color: rgb(79, 150, 79);
+}
+
+#reselectGamelevels:hover {
+  background-color: rgb(56, 89, 123);
+}
+
+#scoreText {
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+#finalScore {
+  position: absolute;
+}

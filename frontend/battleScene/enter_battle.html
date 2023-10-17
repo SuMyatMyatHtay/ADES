@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> The Arena </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../Css/battleScene.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/molisa-delawere" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/molisa-delawere');
+    </style>
+
+</head>
+
+
+<body>
+
+    <div id="DOM container">
+        <div class="navbar">
+            <a href="./index.html"> Create Player </a>
+            <a href="./battleAdversary.html">Create Adversary</a>
+            <a href="./inBetween.html"> Your Characters</a>
+        </div>
+        <h1> The Arena </h1>
+        <div id="player-info">
+            <h2> Player </h2>
+            <div id="player-health">Health: <span></span></div>
+            <div id="player-moves">Moves Left: <span></span></div>
+        </div>
+
+        <div id="battle-scene">
+            <div id="battle-message"></div>
+        </div>
+        <div class="split">
+            <div class="split left">
+                <div class="centered">
+                    <img src="../images/bananameow.png" alt="banana cat">
+                    <div id="selection">
+                        <h2> Select Player </h2>
+                        <select id="player-select"></select>
+                    </div>
+                    <p>meow meow meow</p>
+                </div>
+            </div>
+
+            <div id="fifth" class="split center">
+                <button id="attack-button" disabled> Attack! </button>
+            </div>
+
+            <div class="split right">
+                <div class="centered">
+                    <img src="../images/watermelonmeow.png" alt="watermelon cat">
+                    <div id="selection">
+                        <h2> Select Adversary </h2>
+                        <select id="adversary-select"></select>
+                    </div>
+                    <p>rawr rawr</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="battleScene.js"></script>
+</body>
+
+</html>

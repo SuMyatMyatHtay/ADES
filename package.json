@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "start": "cd backend && npm start",
+    "dev": "cd backend && npm run dev",
+    "postinstall": "cd backend && npm install && cd ../frontend-react && npm install && npm run build",
+    "postinstall2": "cd backend && npm install && cd ../frontend-react && npm install && npm run build && cd ../backend && npm run dev"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "http": "^0.0.1-security",
+    "react-icons": "^4.10.1",
+    "react-router-dom": "^6.14.0",
+    "websocket": "^1.0.34",
+    "ws": "^8.13.0"
+  }
+}

@@ -1,0 +1,203 @@
+#cardsCollection {
+    background-image: url("../images/MonsterWorldBg.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    padding-bottom: 8%;
+}
+
+#cardsCollection:-webkit-scrollbar {
+    height: 0;
+    width: 0;
+    display: none;
+}
+
+#cardsCollection {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+img.cards {
+    width: 100%;
+    height: 182px;
+    border-style: groove;
+    border-width: 2px;
+    border-color: #82690d;
+    border-radius: 10px;
+}
+
+div.cards {
+    padding: 8px;
+    width: 252px;
+    height: 400px;
+    margin: 8px 8px 8px 8px;
+    border-radius: 10px 10px 10px 10px;
+    background-image: linear-gradient(blue,white);
+    border: 5px solid rgb(178 172 0);
+}
+
+div.cards * {
+    font-family: "Poppins", sans-serif;
+}
+
+div#top {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.attacks {
+    display: flex;
+    flex-direction: column;
+}
+
+div#attack_name {
+    display: flex;
+    justify-content: center;
+
+}
+
+div.attack_name {
+    font-size: small;
+}
+
+div.attack_damage {
+
+    font-weight: 900;
+}
+
+div#attack_name>* {
+    padding: 5px
+}
+
+p#creature_name {
+    display: flex;
+    justify-content: center;
+}
+
+div#buttons>button {
+    margin: 20px;
+    padding: 10px
+}
+
+div#displayGold {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+div#cards {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div#show {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+div#showCard {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 600px;
+    background-color: darkblue;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+button.button {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin: 5px 0px;
+    cursor: pointer;
+
+}
+
+button#button {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px 60px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+    top: inherit;
+    position: absolute;
+    right: 20%;
+}
+
+div#showCards {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div#SearchBody {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+div#search {
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+div#ClanRequestMain {
+    height: 100vh;
+    background-image: url('../images/searchClan.jpg');
+    background-size: 100%;
+}
+
+div#ClanToJoin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(148, 107, 53);
+    padding: 10px;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div#ClanToJoin>img {
+    width: 100px;
+    height: 100px;
+}
+
+div#loading {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #251758;
+    text-align: center;
+}

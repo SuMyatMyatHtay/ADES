@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="./Css/signUp.css" rel="stylesheet" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="./Css/nav.css" rel="stylesheet" />
+    <link href="./Css/signUp.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <p id="gameName">Monster Cat World</p>
+            <img src="./images/logo.PNG" id="logo" />
+            <ul id="navul">
+
+            </ul>
+
+        </nav>
+        <div id="subNav">
+
+
+
+        </div>
+
+       
+    </header>
+    
+    <div class="form">
+        <div class="main">
+            <img src="./images/ExtraChar3.PNG" id="character"/>
+            <h2>Sign Up</h2>
+            <div class="inputs">
+                <label for="username">Username :</label>
+                <input type="text" class="form-control" id="username" placeholder="username" >
+                <p class="error" id="username-error"></p>
+            </div>
+            <div class="inputs">
+                <label for="email">Email :</label>
+                <input type="text" class="form-control" id="email" placeholder="example@mail.com" >
+                <p class="error" id="email-error"></p>
+            </div>
+            <div class="inputs">
+                <label for="password">Password :</label>
+                <input type="password" class="form-control" id="password" placeholder="password" >
+                <p class="error" id="password-error"></p>
+            </div>
+            <div class="inputs">
+                <label for="ConfirmPassword">Confirm password :</label>
+                <input type="password" class="form-control" id="confirmPassword" placeholder="re-type your password" >
+                <p class="error" id="confirm-password error"></p>
+            </div>
+            <div class="inputs">
+                <label for="">Gender:</label><br>
+                <input type="radio" id="maleOpt" name="gender" value="male">
+                <label for="opt1">Male</label><br>
+                <input type="radio" id="femaleOpt" name="gender" value="female">
+                <label for="opt2">Female</label><br>
+            </div>
+            <button id="submitSignOut" type="button">Sign Up</button>
+        </div>
+    </div>
+
+    <div id="alert-box">
+       
+    </div>
+    <script src="./script/nav.js"></script>
+    <script src="./script/signUp.js"></script>
+</body>
+
+</html>

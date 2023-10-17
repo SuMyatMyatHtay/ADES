@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clan Points Page</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="./Css/clanPointPage.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div style="margin-left: 20px">
+      <div class="container">
+        <div class="thirdContainer">
+          <button id="togoGiftCardpage">Free Gift Card</button>
+          <h1  id="clanNameInPage"></h1>
+          <button id="exit">Exit</button>
+        </div>
+        <div id="SecContainer">
+          <h2 class="white-text" id="clanPointsInPage"></h2>
+          <div>
+            <div id="noOfCArds"></div>
+          </div>
+        </div>
+        <h3 class="white-text" id="topPlayer"></h3>
+        <div id="container4">
+          <div>
+            <h3 class="white-text" id="gameTitle">Mini Games</h3>
+            <div style="display: flex;">
+            <button id="togoMiniGamee"></button>
+            <button id="togoSecMiniGamee"></button>
+            </div>
+          </div>
+          <div>
+            <table id="tableFormembers">
+              <thead>
+                <tr>
+                  <th>Member Name</th>
+                  <th>Role</th>
+                </tr>
+              </thead>
+              <tbody id="tableBodyForMembers"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="chartContainer">
+          <canvas id="myChart"></canvas>
+        </div>
+        
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./script/clanPOintsPage.js"></script>
+  </body>
+</html>

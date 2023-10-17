@@ -1,0 +1,80 @@
+CREATE TABLE clan (
+ ClanID SERIAL NOT NULL PRIMARY KEY, 
+ ClanName varchar(50) NOT NULL, 
+ CreatedBy INT NOT NULL DEFAULT -1
+)
+
+CREATE TABLE clanDetails (
+ ClanID INT NOT NULL PRIMARY KEY, 
+ ClanType VARCHAR(10) NOT NULL DEFAULT 'public',
+    CHECK (ClanType IN ('public', 'private')),
+ LimitCheck BIT NOT NULL DEFAULT 1,
+    CHECK (LimitCheck IN (0, 1)),
+ ClanCreated TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
+
+CREATE TABLE clanmates (
+ ClanID INT NOT NULL, 
+ PlayerID INT NOT NULL PRIMARY KEY, 
+ PlayerRole VARCHAR(10) NOT NULL DEFAULT 'member', 
+	CHECK(PlayerRole IN ('member', 'leader', 'coleader')),
+ ClanPoints INT NOT NULL DEFAULT 0
+)
+
+CREATE TABLE friendRequest (
+ RequestID SERIAL NOT NULL PRIMARY KEY,
+ SenderID INT NOT NULL, 
+ ReceiverID INT NOT NULL, 
+ Status VARCHAR(10) NOT NULL DEFAULT 'open', 
+	CHECK(PlayerRole IN ('open', 'close')),
+ RequestTimestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
+
+CREATE TABLE trade_request (
+ TradingRequestID SERIAL NOT NULL PRIMARY KEY,
+ PlayerID INT NOT NULL, 
+ FriendID INT NOT NULL, 
+ SelectedCardID_PlayerGet INT NOT NULL, 
+ SelectedCardID_FriendGet INT NOT NULL,
+ TradingStatus VARCHAR(10) NOT NULL DEFAULT 'open', 
+	CHECK(TradingStatus IN ('open', 'close')),
+TradingFieldStatus VARCHAR(10) NOT NULL DEFAULT 'open', 
+	CHECK(TradingFieldStatus IN ('open', 'close')),
+ Timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
+
+CREATE TABLE blackRoom (
+    playerID INT PRIMARY KEY,
+    receivedToken INT NOT NULL, 
+    betToken INT, 
+    collectCheck INT NOT NULL DEFAULT 0 CHECK (collectCheck IN (0, 1)),  -- Corrected the CHECK constraint
+    TimestampEnter TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+ALTER TABLE `ades_ca1`.`blackRoom` 
+DROP COLUMN `TimestampEnter`,
+ADD COLUMN `Month` INT NULL AFTER `collectCheck`,
+ADD COLUMN `Year` INT NULL AFTER `Month`,
+ADD COLUMN `brID` INT NOT NULL AUTO_INCREMENT AFTER `Year`,
+DROP PRIMARY KEY,
+ADD PRIMARY KEY (`brID`);
+;
+ALTER TABLE `ades_ca1`.`blackRoom` 
+CHANGE COLUMN `betToken` `betToken` INT NOT NULL DEFAULT '0' ;
+
+
+CREATE TABLE epicCardsSu ( 
+	card_id SERIAL NOT NULL PRIMARY KEY , 
+    creature_name VARCHAR(45) NOT NULL, 
+    hit_points INT NOT NULL, 
+    price INT NOT NULL, 
+    creature_level INT NOT NULL, 
+    month INT NOT NULL, 
+    year INT NOT NULL, 
+    luckyNumber INT NOT NULL 
+) 
+
+CREATE TABLE ecPlayerLink ( 
+    tempLinkID SERIAL NOT NULL PRIMARY KEY, 
+    epicCardID INT NOT NULL, 
+    playerID INT NOT NULL
+)

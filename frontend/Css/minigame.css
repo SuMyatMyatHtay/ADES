@@ -1,0 +1,103 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-image: url('../images/minigameBackground.jpg');
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+
+#score {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  font-size: 30px;
+  font-weight: 900;
+  font-family:courier;
+  
+}
+
+#quit{
+  position: absolute;
+  top :30px;
+  left:30px;
+  border-radius: 10px;
+  background-color: red;
+  font-size: 20px;
+  border-color: red;
+  color: white;
+  
+}
+
+
+
+#containerForTwobuttons{
+  width: 250px;
+  height:120px;
+  background-color: white;
+  position: absolute;
+  border-radius: 10px;
+  border:3px solid #B84433;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+#quitFromGame{
+  margin-left: 30px;
+  margin-right: 10px;
+  width:80px;
+  height:30px;
+  background-color: red;
+  color: white;
+  border:0px;
+  border-radius: 5px;
+}
+
+#restart{
+  margin-left: 10px;
+  width:80px;
+  height:30px;
+  background-color: green;
+  color: white;
+  border:0px;
+  border-radius: 5px;
+}
+
+#quitFromGame:hover{
+  background-color: rgb(164, 95, 95);
+}
+
+#restart:hover{
+  background-color: rgb(79, 150, 79);
+}
+
+#scoreText{
+  font-size: 20px;
+}
+
+#finalScore{
+  position: absolute;
+}
+
+
+
+
+
+
+

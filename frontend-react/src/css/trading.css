@@ -1,0 +1,17 @@
+.Main {
+    overflow: 'scroll';
+    height: '100vh';
+
+}
+
+.Main::-webkit-scrollbar {
+    width: 0;
+}
+
+.Main::-webkit-scrollbar-track {
+    background-color: none;
+}
+
+.Main::-webkit-scrollbar-thumb {
+    background-color: none;
+}

@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Sultan;
+    src: url(../fonts/Sultan.otf);
+}
+
+@font-face {
+    font-family: southPark;
+    src: url(../fonts/south\ park.ttf);
+}
+
+#discoClub {
+    height: 100vh;
+    background-image: url("../images/gif/discoClub.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 0%;
+    margin: 0%;
+    overflow: hidden;
+}
+
+#loadingGifDCDiv {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    z-index: 10;
+    width: 100vw;
+    margin-top: 8%;
+}
+
+#DCloadingGIF {
+
+    width: 600px;
+    margin: auto;
+    align-self: center;
+    transform: all ease-in 0.2s;
+}
+
+#discoCosmoPicContainer {
+    width: 100%;
+    position: absolute;
+    height: 360px;
+    overflow: hidden;
+    top: 43px
+}
+
+#discoCosmoPic {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
+#discoClubPlayers {
+    box-sizing: content-box;
+    position: relative;
+    top: 125px;
+    height: 500px;
+    overflow: hidden;
+}
+
+#discoClubPlayers img {
+    box-sizing: content-box;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 1%;
+}
+
+.playerName {
+    box-sizing: content-box;
+    position: relative;
+    top: -60px;
+    right: 5px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 2px #00000091;
+}
+
+
+.playerDiv {
+    width: 17%;
+    transition: transform .3s cubic-bezier(0.98, 0.995, 0.333, 0.66);
+}
+
+#loadingClub {
+    position: absolute;
+    left: 500px;
+    top: 250px;
+    color: white;
+    letter-spacing: 5px;
+    font-family: Sultan;
+    font-size: 3em;
+}
+
+#jumpBtn {
+    position: absolute;
+    left: 100px;
+    top: -20px;
+    z-index: 7;
+    padding: 4px;
+    background-color: rgb(198, 137, 255);
+    border: 2px solid rgb(67, 0, 106);
+    box-shadow: 2px 2px 5px #00000057;
+}
+
+#clubNameDiv {
+    box-sizing: content-box;
+    background-color: rgb(218, 43, 206);
+    position: absolute;
+    right: 262px;
+    width: 110px;
+    height: 110px;
+    top: 40px;
+    border-radius: 50%;
+    padding: auto;
+
+}
+
+#raveName {
+    color: rgb(255, 255, 255);
+    font-family: southPark;
+    font-size: 15px;
+    text-align: center;
+    margin: 45% 0 0 0;
+
+}
+
+
+#discoMonster {
+    width: 15%;
+    position: absolute;
+    right: 300px;
+    top: 70px;
+    filter: drop-shadow(1px 1px 20px rgb(0, 102, 255));
+}
+
+
+
+#getGold {
+    position: absolute;
+    right: 350px;
+    top: 140px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 200);
+    padding: 4px 6px 4px 6px;
+}
+
+#DiscoExit {
+    font-size: 19px;
+    padding: 2px 12px 2px 12px;
+    margin: 3.5% 0% 0% 7.5%;
+    position: absolute;
+    top: 45px;
+    left: 5px;
+    font-weight: 600;
+    text-align: center;
+    transform: rotate(-13deg);
+    background-color: rgba(0, 255, 0, 0.9);
+    border: none;
+    color: rgb(255, 116, 116)
+}
+
+#DiscoExit:hover {
+    background-color: rgba(0, 212, 0, 0.68);
+    color: rgb(255, 255, 255)
+}

@@ -1,0 +1,28 @@
+#BuyCards{
+    background-image: url("../images/Backgroundopt.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+div#lootboxes>div>img{
+    width: 250px;
+    height: 250px;
+}
+div#lootboxes>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+div#lootboxes>div>*{
+    margin: 10px;
+    background-color: #000000bd;
+}
+
+div#lootboxes{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}

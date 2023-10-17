@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Bright_Melody;
+    src: url(../fonts/Bright\ Melody\ Personal\ Use\ Only.ttf);
+}
+
+#createClan {
+    box-sizing: content-box;
+    background-image: url("../images/createClanBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0%;
+    overflow: hidden;
+}
+
+
+.createClanForm {
+    box-sizing: content-box;
+    background-color: rgb(255, 255, 255);
+    padding: 3%;
+    padding-top: 2%;
+    width: 400px;
+    position: absolute;
+    left: 400px;
+    top: 150px;
+
+}
+
+#createClanText {
+    box-sizing: content-box ;
+    text-align: left!important;
+    font-size: 28px;
+    margin-bottom: 8%;
+    margin-left: 0%;
+    font-family: Bright_Melody;
+    text-decoration: underline;
+}
+
+.createInputs {
+    box-sizing: content-box;
+    text-align: center;
+}
+
+#clanNameInput {
+    border-radius: 0%;
+    width:200px;
+    padding: 2px 2% 2px 2% ;
+    padding-left: 2%;
+    margin-left: 5px;
+    display: inline;
+    box-sizing: content-box;
+    border: 1px solid black;
+}
+
+.mainLabel {
+    box-sizing: content-box;
+    font-weight: bold;
+    border: none;
+}
+
+.radio {
+    box-sizing: content-box;
+    margin-top: 2%;
+    text-align: left;
+}
+
+.labelRadio {
+    box-sizing: content-box;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 4px;
+    text-align: left;
+}
+
+#createClanSubmit {
+    position: relative;
+    left: 45%;
+    border: 1px solid black
+}
+
+#createClanSubmit:hover{
+    background-color: rgb(169, 169, 169);
+}
+
+.createClanError {
+    color: red;
+}
+
+#createExceedText {
+    box-sizing: content-box;
+    position: absolute;
+    z-index: 8;
+    left: 20px;
+    top: 10px;
+    width: 350px;
+    padding: 10%;
+    text-align: center;
+    font-size: 25px;
+    font-family: sans-serif;
+    color: white;
+}
+
+#clanImage {
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    width: 250px
+}
+
+#privateClass{
+    display: block;
+}
+
+#publicClass{
+    display: block;
+}

@@ -1,0 +1,33 @@
+.Main {
+    background-image: url("../images/FriendBg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow-y: auto;
+
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.imgDiv {
+    display: flex;
+    justify-content: center;
+    text-align: "center";
+    padding-top: 50px;
+}
+
+.imgDiv img {
+    width: 500px;
+}
+
+
+/* 
+.AF_container1 {
+    background-color: 'rgba(0, 0, 0, 0.884)';
+    margin: 25px;
+    border: 3px solid rgb(145, 0, 207);
+} 
+*/

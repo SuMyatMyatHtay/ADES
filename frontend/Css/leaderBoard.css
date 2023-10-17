@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo:700);
+@import url(https://fonts.googleapis.com/css?family=Seaweed+Script);
+
+body {
+  background-image: url("../images/finalBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0%;
+  height: 100vh;
+  overflow-y: hidden;
+  margin:0
+}
+
+#leaderBoardFrame {
+  position: absolute;
+  width: 700px;
+  height: auto;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+#frameForBoard {
+  width: 1000px;
+}
+
+th,
+td {
+  border: 1px solid rgb(144, 139, 139);
+}
+
+table {
+  border: 5px solid rgb(7, 7, 7);
+  padding: 20px;
+  border-radius: 10px;
+}
+#topThreeClans {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 60%;
+  background-color: white;
+}
+
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#topThreeClans td,
+#topThreeClans th {
+  padding: 8px;
+}
+
+#topThreeClans th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgba(56, 112, 196, 0.667);
+  color: white;
+}
+
+#title {
+  text-align: center;
+  top: -15px;
+  text-transform: uppercase;
+  font-family: verdana;
+  font-size: 4em;
+  font-weight: 100;
+  color: rgb(229, 236, 236);
+  text-shadow: 1px 1px 1px #575555, 1px 2px 1px #575555, 1px 3px 1px #575555,
+    1px 4px 1px #575555, 1px 5px 1px #575555, 1px 6px 1px #575555,
+    1px 7px 1px #575555, 1px 8px 1px #575555, 1px 9px 1px #575555,
+    1px 10px 1px #575555, 1px 18px 6px rgba(16, 16, 16, 0.4),
+    1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+    1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+

@@ -1,0 +1,129 @@
+.containersss{
+  height: 100vh;
+  background-image: url("../images/soilTexture.jpg");
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  padding: 0%;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  margin: 0;
+}
+
+.character {
+  position: absolute;
+  cursor: pointer;
+}
+
+#scoreTextforsecgame {
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+#containerToStart{
+  width: 400px;
+  height: 150px;
+  background-color: white;
+  position: absolute;
+  border-radius: 10px;
+  border: 3px solid #b84433;
+  margin-left: 35%;
+  top:40%
+}
+
+#containerForQuitAndRestart {
+  margin-top: 15%;
+  margin-left: 37%;
+  width: 480px;
+  height:170px;
+  background-color: white;
+  position: absolute;
+  border-radius: 10px;
+  border: 3px solid #b84433;
+}
+
+/* #gameArea {
+  height: 600px;
+  width: 1230px;
+  background-color:white ;
+} */
+
+#gameArea {
+  margin-left: 20px;
+  margin-top:50px;
+  height: 550px;
+  width: 1230px;
+}
+
+#startforsec{
+  margin-left: 35%;
+  margin-top: 10px;
+  width: 90px;
+  height: 35px;
+  background-color: green;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+} 
+
+#containerforscoreandmiss{
+  height: 0;
+  color: "white"; 
+  font-Size: 18;
+}
+
+#quitFromSecGame{
+  margin-left: 35px;
+  margin-right: 10px;
+  width:100px;
+  height:40px;
+  background-color: red;
+  color: white;
+  border:0px;
+  border-radius: 5px;
+}
+
+#restartforsecgame {
+  width:100px;
+  height:40px;
+  background-color: green;
+  color: white;
+  border:0px;
+  border-radius: 5px;
+}
+
+#reselectSecGamelevels{
+  margin-left: 10px;
+  width:180px;
+  height:40px;
+  background-color: rgb(38, 109, 185);
+  color: white;
+  border:0px;
+  border-radius: 5px;
+}
+
+#quitFromSecGame:hover{
+  background-color: rgb(164, 95, 95);
+}
+
+#restartforsecgame:hover{
+  background-color: rgb(79, 150, 79);
+}
+
+#reselectSecGamelevels:hover{
+  background-color: rgb(56, 89, 123);
+}
+
+#containerforscoreandmiss{
+  margin-left: 45%;
+  color: white;
+  font-size: 20px;
+}
+
+#starttextforsecgame{
+  margin-top: 30px;
+  margin-left: 10px;
+  font-size: 18px;
+
+}
+

@@ -1,0 +1,81 @@
+.App {
+
+    background-image: url("../images/battle.gif");
+    background-repeat: repeat;
+    background-size: cover;
+    font-family: 'Molisa Delawere', sans-serif;
+    overflow: hidden;
+    color: white;
+    margin: 0;
+    /* cursor: url('../images/cursor.gif'), auto; */
+}
+
+#attack-button {
+  border: none;
+  background: none;
+  color: inherit;
+  padding: 0;
+  font:inherit;
+  font-size: 30px;
+  font-family: 'Molisa Delawere', sans-serif;
+  cursor: pointer;
+}
+
+.split {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+}
+
+.centered {
+    text-align: center;
+}
+
+.centered img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+form {
+  font-family: 'Molisa Delawere', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+h1 {
+  font-family: 'Molisa Delawere', sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Molisa Delawere', sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.navbar {
+  background-color: rgb(41, 68, 43);
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ffffff;
+
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="./Css/secMiniGame.css" rel="stylesheet" />
+    <title>Sec Mini Game</title>
+   
+  </head>
+  <body>
+    <div style="height: 0px">
+      <div style="color: white;font-size: 18px;">
+      <p>Score: <span id="score" style="margin-right: 10px;">0</span>Miss: <span id="miss">0</span>/2</p>
+      </div>
+    </div>
+    <div class="container">
+      <div id="containerForQuitAndRestart">
+        <div>
+          <div style="text-align: center">
+            <p id="scoreText"></p>
+          </div>
+          <div>
+            <button id="quitFromGame">QUIT</button>
+            <button id="restart">RESTART</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="containerToStart">
+        <div>
+          <div style="text-align: center">
+            <p>Click on the groundhog before he disappears :</p>
+          </div>
+          <div>
+            <button id="start">START</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="container">
+        <div id="gameArea"></div>
+      </div>
+    </div>
+      <script src="./script/secMiniGame.js"></script>
+  </body>
+</html>

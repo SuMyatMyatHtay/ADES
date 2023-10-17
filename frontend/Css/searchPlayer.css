@@ -1,0 +1,28 @@
+.col {
+    display: flex;
+    align-items: center;
+}
+
+.name-input,
+.id-input {
+    height: 70px;
+    border: 2px solid rgb(145, 0, 207);
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+    padding-left: 35px;
+    margin-right: 35px;
+    border-radius: 50px;
+}
+
+.name-input {
+    flex-grow: 1;
+}
+
+button {
+    padding: 10px;
+    background-color: orange;
+    border: none;
+    color: white;
+}

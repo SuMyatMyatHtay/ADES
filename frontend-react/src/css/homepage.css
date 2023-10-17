@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: WarPriest;
+    src: url(../fonts/WarPriestRegular-PanE.ttf);
+}
+
+
+/*non nav*/
+#homepage {
+    box-sizing: content-box;
+    margin: 0%;
+    background-image: url("../images/HomepageBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    
+}
+
+#homepageDetails {
+    box-sizing: content-box;
+    background-image: url("../images/HomepageBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#HPlogo {
+    margin: auto;
+    width: 450px;
+}
+
+.title {
+    margin-top: 3%;
+    margin-bottom: 0%;
+    font-family: warPriest;
+    text-align: center;
+    font-size: 60px;
+    color: #ffd900;
+    -webkit-text-stroke: 2px #b89c00;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.39);
+}
+
+#description {
+    margin-top: 3%;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    font-family: arial;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.607);
+}
+
+.homePagebuttons {
+   display: flex;
+   justify-content: center;
+    margin-top: 3%;
+}
+
+.homePagebutton {
+    align-self: center;
+    padding: 5px 8px 5px 8px;
+    font-size: 15px;
+}
+
+#signUp {
+    margin-left: 2%;
+}
+
+#signUp:hover {
+    background-color: rgb(244, 160, 82);
+    color: white;
+}
+
+#toLogin {
+    margin-right: 3%;
+}
+
+#toLogin:hover {
+    background-color: rgb(244, 160, 82);
+    color: white;
+}

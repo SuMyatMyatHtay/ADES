@@ -1,0 +1,87 @@
+#maincontainerforlwStat{
+    background-color: pink;
+  background-size: cover;
+  height: 100vh;
+  padding: 0%;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  margin: 0;
+  }
+  
+  #containerforluckywheelStatistics {
+      margin: 20px auto;
+      padding: 20px;
+      max-width: 800px;
+      box-shadow: 0 2px 4px rgba(206, 129, 129, 0.1);
+      background-color: white;
+      border-radius: 10px;
+      
+    }
+    
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .backButton {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    
+    .backButton:hover {
+      background-color: #0056b3;
+    }
+    
+    h2 {
+      font-size: 24px;
+    }
+    
+    .statisticsTable {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      background-color: white;
+    }
+    
+    .statisticsTable th{
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      background-color: #f2f2f2;
+      color: #0d0d0d;
+  
+    }
+    .statisticsTable td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .statisticsTable th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+    
+    .statisticsTable tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    
+    .statisticsTable tr:hover {
+      background-color: #e0e0e0;
+    }
+  
+    .statisticsTable th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+      padding: 12px; /* Increase padding for more height */
+      font-size: 16px; /* Adjust font size as needed */
+    }
+  

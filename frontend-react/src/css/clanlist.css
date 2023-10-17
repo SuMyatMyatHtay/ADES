@@ -1,0 +1,91 @@
+#maincontainerforclanList {
+  background-image: url(../images/clanListBackground.jpg);
+  background-size: cover;
+  height: 100vh;
+  padding: 0%;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  margin: 0;
+}
+
+#container5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+} 
+
+#container {
+  width: 650px;
+  height: 420px;
+  border: 3px solid #b84433;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#text {
+  margin-top: 6%;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.dropdownMenu {
+  margin-right: 150px;
+}
+
+.nav-item{
+  display: flex;
+  align-items: center;
+}
+
+#chooseClan {
+  margin-left: 260px;
+  margin-top: 50px;
+  width: 150px;
+  height: 40px;
+  background-color: #b84433;
+  color: white;
+  border: 0px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+#chooseClan:hover {
+  background-color: rgb(201, 104, 104);
+  border: 1px;
+  border-color: #b84433;
+}
+
+#clans {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+#listOfClans {
+  width: 120px;
+  height: 35px;
+  border-radius: 5px;
+  color: white;
+  background-color: #b84433;
+  text-align: center;
+}
+
+#buttontogoPlayforself{
+  width:150px;
+  height:40px;
+  margin-top: 30px;
+  margin-left: 40%;
+  border-radius: 10px;
+  background-color: #b84433;
+  color: white;
+  border: 2px solid #b84433;
+}
+
+#buttontogoPlayforself:hover{
+  background-color: rgb(201, 104, 104);
+  border-color: rgb(201, 104, 104);
+}

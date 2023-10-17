@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Adversaries </title>
+    <link rel="stylesheet" type="text/css" href="../Css/battleAdversary.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/so-bad" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/so-bad');
+
+    </style>
+</head>
+
+<body>
+
+    <div id="DOM container">
+        <div class="navbar">
+            <a href="./enter_battle.html"> Enter Battle </a>
+            <a href="./index.html"> Create Player </a>
+            <a href="./inBetween.html"> Your Characters</a>
+        </div>
+        <h1> Battle Game Adversary Creation </h1>
+        <div class="container">
+            <div class="box">
+                <h2> Create Adversary </h2>
+                <form id="create-adversary-form">
+                    <br>
+                    <br>
+                    <label for="attack-type-input">Attack Type: </label>
+                    <input type="text" id="attack-type-input" name="attack_type">
+                    <br>
+                    <br>
+                    <label for="health-input">Health: </label>
+                    <input type="number" id="health-input" name="health">
+                    <br>
+                    <br>
+                    <label for="moves-left-input">Moves Left: </label>
+                    <input type="number" id="moves-left-input" name="moves_left">
+                    <br>
+                    <br>
+                    <label for="status-input">Status: </label>
+                    <input type="text" id="status-input" name="status">
+                    <br>
+                    <br>
+                    <label for="power-input">Power: </label>
+                    <input type="number" id="power-input" name="power">
+                    <br>
+                    <br>
+                    <button id="create-adversary-button"> create </button>
+                    <br>
+                    <br>
+                </form>
+            </div>
+            <div class="box">
+
+                <h2> Get all of the Adversaries </h2>
+                <div id="all adversary"></div>
+                <ul id="adversary-list"></ul>
+                <button id="get-adversary-button" onclick="GetAllAdversary()"> All available adversaries</button>
+                <div>
+                    <br>
+                    <br>
+                    <br>
+                    <label for="adversary-id-input"> Enter Player ID: </label>
+                    <input type="text" id="adversary-id-input">
+                    <button id="get-adversary-by-id-button" onclick="GetAdversaryById()"> Get adversary by ID </button>
+                </div>
+                <ul id="adversary-info"></ul>
+            </div>
+
+            <div class="box">
+                <h2> Updating Adversaries by ID </h2>
+                <form id="updating-adversary-form">
+                    <br>
+                    <br>
+                    <label for="updateAdversaryId">Adversary ID: </label>
+                    <input type="number" id="updateAdversaryIdInput" name="updateAdversaryId" required>
+                    <br>
+                    <br>
+                    <label for="updateAttack">Update attack: </label>
+                    <input type="text" id="updateAttackInput" name="updateAttack" required>
+                    <br>
+                    <br>
+                    <label for="updateHealth">Update Health: </label>
+                    <input type="number" id="updateHealthInput" name="updateHealth" required>
+                    <br>
+                    <br>
+                    <label for="updateMoves">Update Moves: </label>
+                    <input type="number" id="updateMovesInput" name="updateMoves" required>
+                    <br>
+                    <br>
+                    <label for="updateStatus">Update Status: </label>
+                    <input type="text" id="updateStatusInput" name="updateStatus" required>
+                    <br>
+                    <br>
+                    <label for="updatePower">Update Power: </label>
+                    <input type="number" id="updatePowerInput" name="updatePower" required>
+                    <br>
+                    <br>
+                    <button type="submit"> update </button>
+                    <br>
+                    <br>
+                </form>
+            </div>
+
+            <div class="box">
+                <h2> Delete Adversary by ID </h2>
+                <form id="deleteAdversary">
+                    <br>
+                    <br>
+                    <label for="deleteAdversaryId"> Player ID: </label>
+                    <input 
+                    type="number" 
+                    id="deleteAdversaryId" 
+                    name="deleteAdversaryId" 
+                    required/>
+                    <button type="submit"> Delete </button>
+                    <br>
+                    <br>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<script src="battleAdversary.js"></script>
+</body>
+
+</html>

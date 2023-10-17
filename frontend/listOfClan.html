@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Of Clans</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="./Css/clanList.css" rel="stylesheet" />
+    <link href="./Css/nav.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <p id="gameName">Monster Cat World</p>
+        <img src="./images/logo.PNG" id="logo" />
+        <ul id="navul"></ul>
+      </nav>
+      <div id="subNav"></div>
+    </header>
+    <div id="container5">
+      <div id="container">
+        <div id="textandDropdown">
+          <h1 id="text">Please choose clan name first..</h1>
+          <div class="dropdownMenu">
+            <li class="nav-item">
+              <label id="clans">list of clans</label>
+              <select class="select-box" id="listOfClans"></select>
+            </li>
+          </div>
+          <button type="submit" id="chooseClan">Next</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script/nav.js"></script>
+    <script src="./script/listOfClan.js"></script>
+  </body>
+</html>

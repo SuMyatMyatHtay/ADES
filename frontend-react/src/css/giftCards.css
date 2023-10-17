@@ -1,0 +1,96 @@
+#maincontainerforgiftcard{
+  background-color:#a7645a;
+     height: 100vh;
+     background-size: cover;
+     font-family: Arial, sans-serif;
+     padding: 0%;
+     background-position: fixed;
+     background-repeat: no-repeat;
+     overflow-y: hidden;
+     margin: 0;
+ }
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 20px;
+  margin-right: 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+#cardForPrize {
+  margin-left: 140px;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  text-align: center;
+  background-color: #e3bab4;
+}
+
+.buttonToClaim {
+  width: 50%;
+  height: 40px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  border: 0px;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+
+#containerforTitleAndButton {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+#titleForGiftCardPage {
+  margin: auto;
+  padding-left: 10px;
+  font-size: 50px;
+  color: #070707;
+  font-weight: bold;
+  margin-left: 15%;
+}
+
+#goToClanPage {
+  margin-left: 30px;
+  width: 120px;
+  height: 50px;
+  background-color: #e8432a;
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  font-size: 15px;
+}
+
+#goToClanPage:hover {
+  background-color: #a55346;
+}
+
+#date {
+  font-size: 25px;
+  margin-left: 160px;
+  color: #070707;
+}
+
+#textsForGiftCardPage {
+  font-size: 20px;
+  margin-left: 160px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #070707;
+}

@@ -1,0 +1,196 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Bright_Melody;
+    src: url(../fonts/Bright\ Melody\ Personal\ Use\ Only.ttf);
+}
+
+body {
+    margin: 0%;
+    overflow: hidden;
+
+}
+
+.login {
+    box-sizing: content-box;
+    background-image: url("../images/loginBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+#loginDoneGIf {
+    width: 600px;
+    align-self: center;
+}
+
+#loginForm {
+    box-sizing: content-box;
+    padding: 2% 4% 2% 4%;
+    width: 400px;
+    margin: auto;
+    background-color: white;
+    position: absolute;
+    top: 140px
+}
+
+.groupDiv {
+    box-sizing: content-box;
+    margin-bottom: 3%;
+}
+
+
+
+#loginText {
+    box-sizing: content-box;
+    color: black;
+    font-size: 25px;
+    margin-bottom: 5%;
+    font-family: Bright_Melody;
+    text-decoration: underline;
+}
+
+#loginButton {
+    box-sizing: content-box;
+    margin-top: 6%;
+    padding: 4px 7px 4px 7px;
+    border: 1px solid black;
+}
+
+#loginButton:hover {
+    background-color: rgb(173, 173, 173);
+    color: white;
+}
+
+#confirm {
+    border: 1px solid black;
+    box-sizing: content-box;
+    margin-top: 4%;
+    margin-bottom: 3%;
+    font-size: 14px;
+    display: block;
+    padding: 4px 7px 4px 7px
+}
+
+#forgetText {
+    box-sizing: content-box;
+    text-align: left;
+}
+
+#knight {
+
+    box-sizing: content-box;
+    width: 70px;
+    position: absolute;
+    top: 10px;
+    left: 140px
+}
+
+#loginCharacter {
+    box-sizing: content-box;
+    width: 200px;
+    position: absolute;
+    top: 200px;
+    left: 300px
+}
+
+.loginLabel {
+    color: black
+}
+
+#forgetAlertBox {
+    box-sizing: content-box;
+    background-color: rgb(172, 203, 255);
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    width: 300px;
+    height: auto;
+    padding: 5% 5% 5% 5%;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+#forgetPasswordButtons {
+    display: block;
+
+}
+
+#back2login {
+    border: 1px solid black;
+    font-size: 14px;
+    margin-top: 3%;
+    padding: 4px 7px 4px 7px;
+
+}
+
+#loginAlertBox {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: absolute;
+    z-index: 2;
+    top: 140px
+}
+
+.warning {
+    background-color: rgb(255, 0, 0);
+    width: 400px;
+    height: 200px;
+    box-shadow: 0px 0px 50px rgba(76, 76, 76, 0.201);
+    text-align: center;
+}
+
+#loginAlertText {
+    padding-top: 22%;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#loginPassword {
+    display: inline;
+    width: 260px;
+    margin: 2% 2% 0% 2%;
+}
+
+#loginPassword2 {
+    display: inline;
+    width: 260px;
+    margin: 3% 2% 2% 2%;
+}
+
+
+
+#loginEmail {
+    display: inline;
+    width: 240px;
+    margin: 1% 2% 1% 2%;
+}
+
+#loginEmail2 {
+    display: inline;
+    width: 240px;
+    margin: 4% 2% 1% 2%;
+}
+
+#confirmPassword {
+    display: inline;
+    width: 240px;
+    margin: 1% 2% 1% 2%;
+}
+
+.loginInputs {
+    box-sizing: content-box;
+    padding: 1px 2px 0 2px;
+}
+
+div label {
+    font-family: 'Times New Roman', Times, serif;
+}

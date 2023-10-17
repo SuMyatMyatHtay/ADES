@@ -1,0 +1,125 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Bright_Melody;
+    src: url(../fonts/Bright\ Melody\ Personal\ Use\ Only.ttf);
+}
+
+
+#signUpBody {
+    margin: 0%;
+    overflow: hidden;
+}
+
+.signUp {
+    background-position: 1%;
+    background-image: url("../images/signUp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.signUpDiv {
+    box-sizing: content-box;
+    margin-top: 5%;
+}
+
+#signUpCharacter {
+    width: 210px;
+    object-fit: contain;
+    position: absolute;
+    left: 300px;
+    top: 0px
+}
+
+.main {
+    padding: 2% 4% 2% 4%;
+    width: 500px;
+    margin: auto;
+    background-color: white;
+    position: absolute;
+    left: 400px;
+    top: 100px
+}
+
+#signUpText {
+    font-size: 25px;
+    margin-bottom: 8%;
+    font-family: Bright_Melody;
+    text-decoration: underline;
+}
+
+label {
+    font-family: sans-serif
+}
+
+#submitSignUp {
+    box-sizing: content-box;
+    padding: 1% 2% 1% 2%;
+    margin: 3% 0 0 1%;
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+.alert {
+    border: 2px rgb(149, 195, 255) solid;
+    width: 90%;
+    height: 350px;
+    padding: 2%;
+    background-color: rgb(221, 239, 255);
+    box-shadow: 0px 0px 50px rgba(76, 76, 76, 0.201)
+}
+
+#signUpAlert {
+    box-sizing: content-box;
+    position: absolute;
+    right: 250px;
+    width: 50%;
+    bottom: 100px;
+}
+
+#congrats {
+    font-size: large;
+    font-weight: 2em;
+    color: rgb(225, 3, 177);
+    font-family: Helvetica, sans-serif;
+}
+
+.signUpwarning {
+    background-color: rgb(255, 0, 0);
+    width: 400px;
+    height: 200px;
+    margin: 5% 2% 15% 10%;
+    box-shadow: 0px 0px 50px rgba(76, 76, 76, 0.201);
+    text-align: center;
+}
+
+#signUpError {
+    padding-top: 15% ;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.signUpInputs {
+
+    box-sizing: content-box;
+    display: inline;
+    padding: 0px 5px 0px 5px;
+    margin-left: 4px;
+    width: 200px
+}
+
+.signUpRadio {
+    box-sizing: content-box;
+}
+
+.radioOpt {
+    display: block;
+}
+
+#genderSignUp {
+    margin-top: 3%
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/SuButton.css">
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>Trading BarChart</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+        .accepted-bar {
+            fill: rgb(0, 255, 42);
+        }
+
+        .rejected-bar {
+            fill: rgb(255, 0, 0);
+        }
+
+        .pending-bar {
+            fill: rgb(255, 234, 0);
+        }
+
+        .x-axis-text {
+            font-size: 12px;
+            text-anchor: middle;
+        }
+    </style>
+</head>
+
+<body
+    style="background-image: url(./images/TradingGraphPageBG.jpg); background-repeat: no-repeat; background-attachment: fixed; background-size: cover; padding: 20px;">
+
+    <button class="custom-button" onclick="location.href = 'index.html'">Back</button>
+    <div style="text-align: center">
+        <img src="./images/TradingStatistics.png" alt="Search Heading" style="width: 580px;">
+    </div>
+
+    <div id="chartContainer" style="display: flex; justify-content: center; margin: 50px;">
+        <div style="background-color: white; padding: 20px;">
+            <svg id="chart"></svg>
+        </div>
+
+    </div>
+    <div style="text-align: center;">
+        <img src="./images/graphLabel.png" alt="Graph Label" style="width: 40%;">
+    </div>
+
+    <h3 id="nochart" style="color: white; text-align: center;"></h3>
+
+
+    <div id="extraGraph"
+        style="color: white; text-align: center; border: 2px solid red; background-color: rgba(0, 0, 0, 0.575); margin: 100px; padding: 20px;">
+        <h3 id="smallTableHeading" style="padding: 30px 0px;">Total Accepted Trading Graph Between Player and Friends
+        </h3>
+        <div id="extraTable" class="container">
+            <img src="./images/gif/LoadingPinkBar.gif" alt="Loading...">
+        </div>
+        <div style="text-align: center; padding-top: 30px;">
+            <button id="accptedButton" class="custom-button">Accepted Trading Request</button>
+            <button id="rejectedButton" class="custom-button">Rejected Trading Request</button>
+            <button id="pendingButton" class="custom-button">Pending Trading Request</button>
+        </div>
+
+    </div>
+
+    <script src="script/tradingGraph.js"></script>
+</body>
+
+</html>
